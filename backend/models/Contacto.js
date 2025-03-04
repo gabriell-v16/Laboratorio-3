@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const ContactoSchema = new mongoose.Schema({
   nombre: { type: String, required: true },
@@ -12,4 +12,4 @@ const ContactoSchema = new mongoose.Schema({
   esVisible: { type: Boolean, default: true }, // Define si el admin permite que sea visible
 });
 
-module.exports = mongoose.model("Contacto", ContactoSchema);
+export const Contacto = mongoose.model("Contacto", ContactoSchema);

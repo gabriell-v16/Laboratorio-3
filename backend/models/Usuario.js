@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const UsuarioSchema = new mongoose.Schema({
   nombre: { type: String, required: true },
@@ -7,4 +7,4 @@ const UsuarioSchema = new mongoose.Schema({
   esAdmin: { type: Boolean, default: false }, // Para identificar administradores
 });
 
-module.exports = mongoose.model("Usuario", UsuarioSchema);
+export const Usuario = mongoose.model("Usuario", UsuarioSchema);

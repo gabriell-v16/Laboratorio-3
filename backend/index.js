@@ -1,17 +1,23 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import routerContactos from './routes/contactos.js';
+import routerUsuarios from './routes/usuarios.js'
 
 const app = express();
+
+// Configurar variables de entorno
+dotenv.config();
+
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
 
 // Conectar rutas
-app.use("/api/usuarios", require("./routes/usuarios")); // Rutas de usuarios
-app.use("/api/contactos", require("./routes/contactos")); // Rutas de contactos
+app.use('/api', routerContactos);
+app.use('/api', routerUsuarios);
 
 // Conectar a MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
