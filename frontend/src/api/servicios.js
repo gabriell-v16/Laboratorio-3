@@ -11,6 +11,19 @@ export const registrarUsuario = async (datos) => {
   }
 };
 
+
+// Función para iniciar sesión
+export const iniciarSesion = async (credenciales) => {
+  try {
+    const respuesta = await API.post("/usuarios/login", credenciales);
+    return respuesta.data;
+  } catch (error) {
+    console.error("Error al iniciar sesión:", error);
+    throw error;
+  }
+};
+
+
 // Función para obtener los contactos
 export const obtenerContactos = async () => {
   try {
