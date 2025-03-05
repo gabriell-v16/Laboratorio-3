@@ -16,8 +16,8 @@ app.use(cors());
 app.use(express.json());
 
 // Conectar rutas
-app.use('/api', routerContactos);
-app.use('/api', routerUsuarios);
+app.use('/api/contactos', routerContactos);
+app.use('/api/usuarios', routerUsuarios);
 
 // Conectar a MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
