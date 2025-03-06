@@ -26,11 +26,7 @@ const Info = () => {
             </div>
           </div>
   
-          <div className="mt-8 text-center">
-            <button className="bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
-              Empezar a Usar la App
-            </button>
-          </div>
+          
         </div>
       </div>
     );
