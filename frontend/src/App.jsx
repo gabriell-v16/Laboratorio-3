@@ -9,6 +9,7 @@ import ProtetectedRoutes from "./components/ProtetectedRoutes";
 import FormularioContacto from "./components/FormularioContacto";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/ReactToastify.css';
+import PublicContactList from "./components/PublicContactList";
 import Porfile from './components/Porfile'
 
 function App() {
