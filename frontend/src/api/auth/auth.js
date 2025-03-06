@@ -1,5 +1,6 @@
 import API from "../api";
 
+
 export const verify = async ()=>{
     try {
         const response = await API.get('/verify');

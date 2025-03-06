@@ -1,6 +1,7 @@
 import { Usuario } from "../../models/Usuario.js";
 
 
+
 export class UsuarioClass{
     static async añadirUsuario(data){
         const nuevoUsuario = new Usuario(data);

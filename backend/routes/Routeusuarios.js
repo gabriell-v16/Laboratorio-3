@@ -1,3 +1,4 @@
+
 import {Router} from 'express';
 import {registroUsuario, loginUsuario, obtenerUser, actualizarPerfil} from '../controllers/usuariosController.js';
 import verificarToken from '../middlewares/authMiddleware.js'

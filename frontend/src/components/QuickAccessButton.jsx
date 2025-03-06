@@ -9,3 +9,4 @@ const QuickAccessButton = ({ icon, text, funcion }) => {
   };
 
   export default QuickAccessButton;
+  

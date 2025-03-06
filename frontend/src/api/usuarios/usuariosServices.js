@@ -10,7 +10,6 @@ export const registrarUsuario = async (datos) => {
     }
   };
   
-  
   // Función para iniciar sesión
   export const iniciarSesion = async (credenciales) => {
     try {

@@ -13,4 +13,5 @@ const ProtetectedRoutes = () => {
     return autenticado ? <Outlet /> : <Navigate to="/" />;
 }
 
+
 export default ProtetectedRoutes

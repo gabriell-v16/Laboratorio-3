@@ -13,7 +13,6 @@ export default function Profile() {
     return <h1>Cargando Pefil...</h1>
   }
 
-
   const [profile, setProfile] = useState({ nombre: perfil.nombre || "", email: perfil.email || "", contraseña: "" });
   const navigate = useNavigate();
 

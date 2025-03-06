@@ -1,6 +1,5 @@
 import API from "../api";
 
-
 export const obtenerContactos = async () => {
     try {
       const respuesta = await API.get("/contactos/obtener");

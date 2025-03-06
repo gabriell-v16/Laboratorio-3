@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import routerContactos from './routes/Routecontactos.js';
 import routerUsuarios from './routes/Routeusuarios.js'
-import connection from './Services/database.js';
+import connection from './services/database.js';
 import routerVerify from './routes/Routeverify.js'
 
 const app = express();

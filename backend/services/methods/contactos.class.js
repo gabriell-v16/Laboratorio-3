@@ -1,6 +1,7 @@
 import { Contacto } from "../../models/Contacto.js";
 import mongoose from "mongoose";
 
+
 export class ContactoClass{
     static async añadirContacto(data){
         const nuevoContact = new Contacto(data);

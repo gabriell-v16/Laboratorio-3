@@ -10,6 +10,7 @@ export const successNotification = (message)=>{
         draggable: true,
     })
 }
+
 export const errorNotification = (message)=>{
     toast.error(message,{
         position: 'top-center',

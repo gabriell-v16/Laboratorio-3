@@ -1,6 +1,5 @@
 import {ContactoClass} from '../services/methods/contactos.class.js'
 
-
 export const getContactos = async (req, res) => {
     try{
           const idUser = req.usuario.id

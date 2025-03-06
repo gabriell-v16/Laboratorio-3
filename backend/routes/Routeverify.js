@@ -1,3 +1,4 @@
+
 import { Router } from "express";
 import verificarToken from "../middlewares/authMiddleware.js";
 import { verify } from "../controllers/verifyController.js";
